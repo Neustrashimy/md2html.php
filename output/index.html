@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+	<meta charset="utf-8"/>
+	
+	<!-- highlight.js https://highlightjs.org -->
+	<!--
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+	-->
+</head>
+<body>
+<h1>md2html demo</h1>
+<h2>Backquotes</h2>
+<blockquote>
+<p>This is a blockquote with two paragraphs. This is first paragraph.</p>
+<p>This is second pragraph.Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.</p>
+</blockquote>
+<h2>Lists</h2>
+<ul>
+<li>Red</li>
+<li>Green</li>
+<li>Blue</li>
+</ul>
+<h2>Checkboxes</h2>
+<ul>
+<li>[ ] a task list item</li>
+<li>[ ] list syntax required</li>
+<li>[ ] normal <strong>formatting</strong>, @mentions, #1234 refs</li>
+<li>[ ] incomplete</li>
+<li>[x] completed</li>
+</ul>
+<h2>Syntax Highlighting</h2>
+<pre><code class="language-ruby">require 'redcarpet'
+markdown = Redcarpet.new("Hello World!")
+puts markdown.to_html</code></pre>
+<h2>Tables</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Left-Aligned</th>
+<th style="text-align: center;">Center Aligned</th>
+<th style="text-align: right;">Right Aligned</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">col 3 is</td>
+<td style="text-align: center;">some wordy text</td>
+<td style="text-align: right;">$1600</td>
+</tr>
+<tr>
+<td style="text-align: left;">col 2 is</td>
+<td style="text-align: center;">centered</td>
+<td style="text-align: right;">$12</td>
+</tr>
+<tr>
+<td style="text-align: left;">zebra stripes</td>
+<td style="text-align: center;">are neat</td>
+<td style="text-align: right;">$1</td>
+</tr>
+</tbody>
+</table>
+<h2>Links</h2>
+<p>This is <a href="http://example.com/hogehoge.html" title="Title">an example</a> inline link.</p>
+<p><a href="http://example.net/">This link</a> has no title attribute.</p>
+<p>Link to <a href="otherpage.html">other page</a></p>
+<p>Link to <a href="http://example.net/fugafuga.md">other domain's md file</a></p>
+<h2>Image</h2>
+<p><img src="img/かえるぞう.png" alt="Alt text"/></p>
+</body>
+</html>
