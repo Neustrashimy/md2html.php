@@ -48,6 +48,8 @@ puts markdown.to_html
 
 This is [an example](http://example.com/hogehoge.md "Title") inline link.
 
+Link to http://example.jp/fugafuga.md
+
 [This link](http://example.net/) has no title attribute.
 
 Link to [other page](otherpage.md)
@@ -58,9 +60,9 @@ Link to [other domain's md file](http://example.net/fugafuga.md)
 
 ## Image
 
-
-
 ![Alt text](img/かえるぞう.png)
+
+![Alt text @120x90](img/かえるぞう.png)
 
 
 

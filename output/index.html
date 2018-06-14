@@ -26,11 +26,11 @@
 </ul>
 <h2>Checkboxes</h2>
 <ul>
-<li>[ ] a task list item</li>
-<li>[ ] list syntax required</li>
-<li>[ ] normal <strong>formatting</strong>, @mentions, #1234 refs</li>
-<li>[ ] incomplete</li>
-<li>[x] completed</li>
+<li>やってない→ a task list item</li>
+<li>やってない→ list syntax required</li>
+<li>やってない→ normal <strong>formatting</strong>, @mentions, #1234 refs</li>
+<li>やってない→ incomplete</li>
+<li>やった→ completed</li>
 </ul>
 <h2>Syntax Highlighting</h2>
 <pre><code class="language-ruby">require 'redcarpet'
@@ -65,10 +65,12 @@ puts markdown.to_html</code></pre>
 </table>
 <h2>Links</h2>
 <p>This is <a href="http://example.com/hogehoge.html" title="Title">an example</a> inline link.</p>
+<p>Link to <a href="http://example.jp/fugafuga.md">http://example.jp/fugafuga.md</a></p>
 <p><a href="http://example.net/">This link</a> has no title attribute.</p>
 <p>Link to <a href="otherpage.html">other page</a></p>
 <p>Link to <a href="http://example.net/fugafuga.md">other domain's md file</a></p>
 <h2>Image</h2>
 <p><img src="img/かえるぞう.png" alt="Alt text"/></p>
+<p><img src="img/かえるぞう.png" alt="Alt text @120x90" width="120" height="90"/></p>
 </body>
 </html>
